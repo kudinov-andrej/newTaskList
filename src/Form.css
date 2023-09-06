@@ -1,0 +1,44 @@
+.input__conteiner {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    border-bottom: 2px solid rgb(51, 50, 50);
+
+}
+
+@media screen and (max-width: 490px) {
+    .input__conteiner {
+        width: 90%;
+        font-size: 12px;
+    }
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    height: 70px;
+    cursor: pointer;
+    transition: color ease 1s;
+    background-image: url('./assets/icons8-галочка-48.png');
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: scale 0.5s ease;
+}
+
+.button:hover {
+    scale: 1.05;
+}
+
+.button:active {
+    border: none;
+}

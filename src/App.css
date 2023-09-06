@@ -1,0 +1,272 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f7f5f5;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  background-color: white;
+  max-width: 100%;
+}
+
+.header__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+  max-width: 90%;
+  text-align: center;
+  font-family: "Snell Roundhand", cursive;
+  font-size: 48px;
+  font-weight: bold;
+
+}
+
+.input__conteiner {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Snell Roundhand", cursive;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  border-bottom: 2px solid rgb(51, 50, 50);
+
+}
+
+@media screen and (max-width: 490px) {
+  .input__conteiner {
+    width: 90%;
+    font-size: 12px;
+  }
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  height: 70px;
+  cursor: pointer;
+  transition: color ease 1s;
+  background-image: url('./assets/icons8-галочка-48.png');
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: scale 0.5s ease;
+}
+
+.button:hover {
+  scale: 1.05;
+}
+
+.button:active {
+  border: none;
+}
+
+.task__list {
+  min-height: 50vh;
+}
+
+.task__list-title {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+  max-width: 90%;
+  text-align: center;
+  font-family: "Snell Roundhand", cursive;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.input {
+  font-family: "Snell Roundhand", cursive;
+  font-size: 24px;
+  padding-left: 20px;
+  width: 100%;
+  background-color: transparent;
+  height: 70px;
+  border: none;
+  text-align: start;
+}
+
+@media screen and (max-width: 490px) {
+  .input {
+    font-size: 12px;
+  }
+}
+
+.input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+
+.item__text-completed {
+  text-decoration: line-through;
+}
+
+.task__item-completed {
+  display: none;
+}
+
+.task__item {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 600px;
+  font-family: "Snell Roundhand", cursive;
+  font-size: 24px;
+  border-bottom: 2px solid rgb(51, 50, 50);
+}
+
+@media screen and (max-width: 490px) {
+  .task__item {
+    font-size: 12px;
+  }
+}
+
+.message__text {
+  display: none;
+}
+
+.message__text-none {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 80%;
+  max-width: 600px;
+  font-family: "Snell Roundhand", cursive;
+  font-size: 24px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 490px) {
+  .message__text-none {
+    font-size: 12px;
+    max-width: 320px;
+  }
+}
+
+.button__finish {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(146, 144, 144);
+  margin-right: 20px;
+  background-color: transparent;
+  background-image: url('./assets/icons8-галочка-48.png');
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: scale 0.5s ease;
+}
+
+@media screen and (max-width: 490px) {
+  .button__finish {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.button__finish:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.button__finish-press {
+  opacity: 0.1;
+  cursor: default;
+}
+
+
+.button__finish-press:hover {
+  opacity: 0.1;
+  scale: 1;
+  cursor: default;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+@media screen and (max-width: 490px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.count-items {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  max-width: fit-content;
+}
+
+@media screen and (max-width: 490px) {
+  .count-items {
+    margin-bottom: 10px;
+  }
+}
+
+
+.navigation {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  padding: 0;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+@media screen and (max-width: 490px) {
+  .navigation {
+    margin-bottom: 10px;
+  }
+}
+
+.navigation__button {
+  margin: 0;
+  padding: 0;
+  max-width: fit-content;
+  margin-right: 10px;
+}
+
+.button__clear-tasks {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  max-width: fit-content;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 490px) {
+  .button__clear-tasks {
+    margin-bottom: 10px;
+  }
+}
